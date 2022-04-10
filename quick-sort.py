@@ -10,10 +10,20 @@ def quick_sort(arr):
   else:
     pivot_index = len(arr) // 2
     pivot = arr[pivot_index]
-    lh_arr = [i for i in arr if i < pivot]
-    pivot_elements = [i for i in arr if i == pivot]
-    rh_arr = [i for i in arr if i > pivot]
-    return quick_sort(lh_arr) + pivot_elements + quick_sort(rh_arr)
+
+    lesser_elements = []
+    pivot_elements = []
+    greater_elements = []
+
+    for i in arr:
+      if i < pivot:
+        lesser_elements.append(i)
+      elif i > pivot:
+        greater_elements.append(i)
+      else:
+        pivot_elements.append(i)
+
+    return quick_sort(lesser_elements) + pivot_elements + quick_sort(greater_elements)
 
 print("Quick Sort Algorithm")
 input_arr = [12, 3, 4, 3, 15, 4]
