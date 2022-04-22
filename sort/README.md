@@ -51,9 +51,10 @@
 ## Quick Sort
 
 ## Merge Sort
+#### Gist: Keep halving input array, and merge all the atomic arrays
 In Merge sort, we keep on halving the input array till we are left with a single element array or an empty array. Then we start merging these atomic arrays by comparing the elements within it.
-> Halving the array is of O(log n) complexity
-> And since we need to half it and then combine the halves, we take about O(n) time for each half
-> Thus the total time-complexity is O(n log n)
+<br />
+Halving the array is of **O(log n)** complexity, and since we need to half it and then combine the halves, we take about **O(n) time for each half**. Thus the total time-complexity is **O(n log n)**
+<br />
 
 ## Radix Sort
