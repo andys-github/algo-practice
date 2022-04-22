@@ -3,10 +3,14 @@
 ## Bubble Sort
 
 
+<br />
 
 ## Insertion Sort
-> Insertion Sort performs really well 
-> when we insert a new element to an already sorted array
+> **NOTE:**
+>> Insertion Sort performs really well 
+>> when we insert a new element to an already sorted array
+
+<br />
 
 ## Selection Sort
 
@@ -48,13 +52,25 @@
 > With nearly sorted data,
 > Bubble and Insertion perform well
 
+<br />
+
 ## Quick Sort
 
-## Merge Sort
-#### Gist: Keep halving input array, and merge all the atomic arrays
-In Merge sort, we keep on halving the input array till we are left with a single element array or an empty array. Then we start merging these atomic arrays by comparing the elements within it.
-<br />
-Halving the array is of **O(log n)** complexity, and since we need to half it and then combine the halves, we take about **O(n) time for each half**. Thus the total time-complexity is **O(n log n)**
+
 <br />
 
+## Merge Sort
+> **Gist:**
+>> Keep halving input array, and merge all the atomic arrays
+
+In Merge sort:
+- We keep on halving the input array till we are left with a single element array or an empty array
+- Then we start merging these atomic arrays by comparing the elements within it.
+
+<br />
+
+Halving the array is of **O(log n)** complexity, and since we need to half it and then combine the halves, we take about **O(n) time for each half**. Thus the total time-complexity is **O(n log n)**
+
+
+<br />
 ## Radix Sort
