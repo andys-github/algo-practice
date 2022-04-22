@@ -22,6 +22,13 @@
   </thead>
 
   <tbody>
+    <tr>
+      <td>Bubble</td>
+      <td>O(n)</td>
+      <td>O(n ^ 2)</td>
+      <td>O(n ^ 2)</td>
+      <td>O(1)</td>
+    </tr>
   </tbody>
 </table>
 
