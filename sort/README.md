@@ -23,14 +23,14 @@
     <tr>
       <th>Best Case</th>
       <th>Avg Case</th>
-      <th>worst Case</th>
+      <th>Worst Case</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>O(n<sup>2</sup>)</td>
-      <td>O(n<sup>2</sup>)</td>
-      <td>O(n<sup>2</sup>)</td>
+      <td>&Omega;(n<sup>2</sup>)</td>
+      <td>&Theta;(n<sup>2</sup>)</td>
+      <td>&Omicron;(n<sup>2</sup>)</td>
       <td>O(1)</td>
     </tr>
   </tbody>
@@ -44,8 +44,8 @@ In Selection Sort:
 - If the second one is smaller than the first, we swap
 - This continues till the last element
 
-Each 'nth' element takes about (n - 1) run throughs. So the overall complexity comes around O(n) * O(n - 1), which becomes **O(n<sup>2</sup>) time complexity**.
-And since the swapping takes place in the input array itself, we have a **O(1) space complexity**.
+Each 'nth' element takes about (n - 1) run throughs. So the overall complexity comes around &Omicron;(n) * &Omicron;(n - 1), which becomes **&Omicron;(n<sup>2</sup>) time complexity**.
+And since the swapping takes place in the input array itself, we have a **&Omicron;(1) space complexity**.
 
 <br />
 
@@ -61,24 +61,24 @@ And since the swapping takes place in the input array itself, we have a **O(1) s
   <tbody>
     <tr>
       <td>Bubble</td>
-      <td>O(n)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(1)</td>
+      <td>&Omega;(n)</td>
+      <td>&Theta;(n<sup>2</sup>)</td>
+      <td>&Omicron;(n<sup>2</sup>)</td>
+      <td>&Omicron;(1)</td>
     </tr>
     <tr>
       <td>Insertion</td>
-      <td>O(n)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(1)</td>
+      <td>&Omega;(n)</td>
+      <td>&Theta;(n<sup>2</sup>)</td>
+      <td>&Omicron;(n<sup>2</sup>)</td>
+      <td>&Omicron;(1)</td>
     </tr>
     <tr>
       <td>Selection</td>
-      <td>O(n ^ 2)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(n ^ 2)</td>
-      <td>O(1)</td>
+      <td>&Omega;(n<sup>2</sup>)</td>
+      <td>&Theta;(n<sup>2</sup>)</td>
+      <td>&Omicron;(n<sup>2</sup>)</td>
+      <td>&Omicron;(1)</td>
     </tr>
   </tbody>
 </table>
@@ -96,13 +96,13 @@ And since the swapping takes place in the input array itself, we have a **O(1) s
 
 ## [Merge Sort](https://github.com/andys-github/algo-practice/blob/main/sort/merge-sort.py)
 > **Gist:** Keep halving input array, and merge all the atomic arrays. 
-> TC: **O(n log n)**, SC: **O(n)**
+> TC: **&Omicron;(n log n)**, SC: **&Omicron;(n)**
 
 In Merge sort:
 - We keep on halving the input array till we are left with a single element array or an empty array
 - Then we start merging these atomic arrays by comparing the elements within it.
 
-Halving the array is of **O(log n)** complexity, and since we need to half it and then combine the halves, we take about **O(n) time for each half**. Thus the total time-complexity is **O(n log n)**
+Halving the array is of **&Omicron;(log n)** complexity, and since we need to half it and then combine the halves, we take about **&Omicron;(n) time for each half**. Thus the total time-complexity is **&Omicron;(n log n)**
 
 
 <br />
