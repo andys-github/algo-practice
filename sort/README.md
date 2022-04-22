@@ -2,7 +2,11 @@
 
 ## Bubble Sort
 
+
+
 ## Insertion Sort
+> Insertion Sort performs really well 
+> when we insert a new element to an already sorted array
 
 ## Selection Sort
 
@@ -41,6 +45,8 @@
   </tbody>
 </table>
 
+> With nearly sorted data,
+> Bubble and Insertion perform well
 
 ## Quick Sort
 
