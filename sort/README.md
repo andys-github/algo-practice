@@ -28,9 +28,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>O(n<sup>2</sup>)</td>
-      <td>O(n<sup>2</sup>)</td>
-      <td>O(n<sup>2</sup>)</td>
+      <td>&Omega;(n<sup>2</sup>)</td>
+      <td>&Theta;(n<sup>2</sup>)</td>
+      <td>&Omicron;(n<sup>2</sup>)</td>
       <td>O(1)</td>
     </tr>
   </tbody>
