@@ -1,8 +1,13 @@
 # -------------------------
 # Q U I C K   S O R T
 # -------------------------
-# Worst-case: O(n^2)
-# Avg-case:   O(n log n)
+# Time Complexity:
+#   Best-case:  O(n log n)
+#   Avg-case:   O(n log n)
+#   Worst-case: O(n^2)
+#
+# Space Complexity: O(log n)
+# -------------------------
 
 def quick_sort(arr):
   if len(arr) < 2:
