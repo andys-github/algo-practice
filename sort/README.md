@@ -9,19 +9,16 @@
 
 ## Comparison between the Quadratic Sorts
 <table>
-  <thead>
     <tr>
-      <td>Sorting Algorithm</td>
+      <th>Sorting Algorithm</th>
     </tr>
     <tr>
-      <td colspan="3">Time Complexity</td>
+      <th colspan="3">Time Complexity</th>
     </tr>
     <tr>
-      <td>Space Complexity</td>
+      <th>Space Complexity</th>
     </tr>
-  </thead>
 
-  <tbody>
     <tr>
       <td>Bubble</td>
       <td>O(n)</td>
@@ -29,7 +26,6 @@
       <td>O(n ^ 2)</td>
       <td>O(1)</td>
     </tr>
-  </tbody>
 </table>
 
 
