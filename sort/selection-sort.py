@@ -1,16 +1,16 @@
 # ---------------------------
-# SELECTION SORT
+# S E L E C T I O N   S O R T
 # ---------------------------
-#
-# Best Case:   O(n^2)
-# Avg Case:    O(n^2)
-# Worst Case:  O(n^2)
+# Time Complexity:
+#   Best Case:   O(n^2)
+#   Avg Case:    O(n^2)
+#   Worst Case:  O(n^2)
 #
 # Space Complexity: O(1)
 # ---------------------------
 
 def selection_sort(arr):
-  for i in range(0, len(arr)):
+  for i in range(len(arr)):
     smallest_index = i
     smallest = arr[i]
 
