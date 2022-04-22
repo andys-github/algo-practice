@@ -11,12 +11,12 @@
 
 def bubble_sort(arr):
   arr_size = len(arr)
-  for i in reversed(range(arr_size)):
-    for j in range(i):
+  for i in range(arr_size):
+    for j in range(arr_size - 1):
       if arr[j] > arr[j + 1]:
         arr[j], arr[j+1] = arr[j+1], arr[j]
   return arr
 
-input_arr = [6, 4, 15, 10, -3]
+input_arr = [6, 4, 15, 10, 13]
 print('Input Array: ', input_arr)
 print('Sorted Array: ', bubble_sort(input_arr))
