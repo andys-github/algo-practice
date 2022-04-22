@@ -11,13 +11,13 @@
 <table>
   <thead>
     <tr>
-      <th>Sorting Algorithm</th>
+      <td>Sorting Algorithm</td>
     </tr>
     <tr>
-      <th>Time Complexity</th>
+      <td colspan="3">Time Complexity</td>
     </tr>
     <tr>
-      <th>Space Complexity</th>
+      <td>Space Complexity</td>
     </tr>
   </thead>
 
