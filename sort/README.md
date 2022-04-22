@@ -11,9 +11,34 @@
 
 <br />
 
-## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py): TC - O(n<sup>2</sup>), SC - O(1)
+## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py)
+#### TC: O(n<sup>2</sup>), SC: O(1)
 > **GIST:** Start with an element, and run through each subsequent elements, and swap if one of them is smaller. Repeat for the next element.
-> TC: **O(n^2)**, SC: **O(n^2)**
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">S E L E C T I O N &nbsp;&nbsp;&nbsp; S O R T
+    </tr>
+    <tr>
+      <th colspan="3">Time Complexity</th>
+      <th colspan="1" rowspan="2">Space Complexity</th>
+    </tr>
+    <tr>
+      <th>Best Case</th>
+      <th>Avg Case</th>
+      <th>worst Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O(n<sup>2</sup>)</td>
+      <td>O(n<sup>2</sup>)</td>
+      <td>O(n<sup>2</sup>)</td>
+      <td>O(1)</td>
+    </tr>
+  </tbody>
+</table>
 
 In Selection Sort:
 - We maintain two pointers - one is fixed at an element, and the other one moves through the remaining elements
