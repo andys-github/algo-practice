@@ -12,14 +12,10 @@
 <br />
 
 ## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py)
-#### TC: O(n<sup>2</sup>), SC: O(1)
 > **GIST:** Start with an element, and run through each subsequent elements, and swap if one of them is smaller. Repeat for the next element.
 
 <table>
   <thead>
-    <tr>
-      <th colspan="4">S E L E C T I O N &nbsp;&nbsp;&nbsp; S O R T
-    </tr>
     <tr>
       <th colspan="3">Time Complexity</th>
       <th colspan="1" rowspan="2">Space Complexity</th>
@@ -40,13 +36,15 @@
   </tbody>
 </table>
 
+<br />
+
 In Selection Sort:
 - We maintain two pointers - one is fixed at an element, and the other one moves through the remaining elements
 - After every pass, we compare the elements these two pointers hold
 - If the second one is smaller than the first, we swap
 - This continues till the last element
 
-Each 'nth' element takes about (n - 1) run throughs. So the overall complexity comes around O(n) * O(n - 1), which becomes **O(n^2) time complexity**.
+Each 'nth' element takes about (n - 1) run throughs. So the overall complexity comes around O(n) * O(n - 1), which becomes **O(n<sup>2</sup>) time complexity**.
 And since the swapping takes place in the input array itself, we have a **O(1) space complexity**.
 
 <br />
@@ -87,7 +85,7 @@ And since the swapping takes place in the input array itself, we have a **O(1) s
 
 <br />
 
-> With nearly sorted data, Bubble and Insertion sorts perform well
+> **NOTE:** With nearly sorted data, Bubble and Insertion sorts perform well
 
 <br />
 
