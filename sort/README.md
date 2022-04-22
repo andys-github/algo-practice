@@ -11,7 +11,18 @@
 
 <br />
 
-## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py)
+## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py): TC - O(n<sup>2</sup>), SC - O(1)
+> **GIST:** Start with an element, and run through each subsequent elements, and swap if one of them is smaller. Repeat for the next element.
+> TC: **O(n^2)**, SC: **O(n^2)**
+
+In Selection Sort:
+- We maintain two pointers - one is fixed at an element, and the other one moves through the remaining elements
+- After every pass, we compare the elements these two pointers hold
+- If the second one is smaller than the first, we swap
+- This continues till the last element
+
+Each 'nth' element takes about (n - 1) run throughs. So the overall complexity comes around O(n) * O(n - 1), which becomes **O(n^2) time complexity**.
+And since the swapping takes place in the input array itself, we have a **O(1) space complexity**.
 
 <br />
 
@@ -62,7 +73,7 @@
 
 ## [Merge Sort](https://github.com/andys-github/algo-practice/blob/main/sort/merge-sort.py)
 > **Gist:** Keep halving input array, and merge all the atomic arrays. 
-> TC: **O(n log n)** - SC: **O(n)**
+> TC: **O(n log n)**, SC: **O(n)**
 
 In Merge sort:
 - We keep on halving the input array till we are left with a single element array or an empty array
