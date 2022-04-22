@@ -11,7 +11,7 @@
 
 <br />
 
-## Selection Sort
+## [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py)
 
 <br />
 
