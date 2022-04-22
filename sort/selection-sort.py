@@ -1,27 +1,30 @@
-def find_smallest(arr):
-  smallest = arr[0]
-  smallest_index = 0
-
-  for i in range(1, len(arr)):
-    if arr[i] < smallest:
-      smallest = arr[i]
-      smallest_index = i
-
-  return smallest, smallest_index
-
-
-# print(find_smallest([1, 3, 4, 1, 0]))
+# ---------------------------
+# SELECTION SORT
+# ---------------------------
+#
+# Best Case:   O(n^2)
+# Avg Case:    O(n^2)
+# Worst Case:  O(n^2)
+#
+# Space Complexity: O(1)
+# ---------------------------
 
 def selection_sort(arr):
-  output_arr = []
-  counter = len(arr)
+  for i in range(0, len(arr)):
+    smallest_index = i
+    smallest = arr[i]
 
-  for i in range(counter):
-    _, sm_index = find_smallest(arr)
-    output_arr.append(arr.pop(sm_index))
+    for j in range(i + 1, len(arr)):
+      if arr[j] < smallest:
+        smallest = arr[j]
+        smallest_index = j
 
-  return output_arr
+    if smallest != arr[i]:
+       arr[smallest_index] = arr[i]
+       arr[i] = smallest
 
-input_arr = [2, 4, 1, 0, 13]
+  return arr
+
+input_arr = [2, 4, 1, 0, 13, 5]
 print("Input Array: ", input_arr)
 print("Selection Sorted Array: ", selection_sort(input_arr))
