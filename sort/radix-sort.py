@@ -1,17 +1,15 @@
 # -----------------------------
-# Radix Sort
+# R A D I X   S O R T
 # -----------------------------
 # Best Case:  O(nk)
 # Avg Case:   O(nk)
 # Worst Case: O(nk)
 #
 # Space Complexity: O(n + k)
-
-# -----------------------------
-# Helper methods
 # -----------------------------
 
 from math import log10, floor
+
 def digit_count(num):
   '''
   returns the number of digits in a given number
