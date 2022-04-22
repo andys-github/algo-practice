@@ -2,12 +2,12 @@
 Algorithm Practice in Python
 
 ## [Sorting Algorithms](https://github.com/andys-github/algo-practice/tree/main/sort)
-#### * Bubble Sort - &Omicron;(n) | &Omicron;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
-#### * [Insertion Sort](https://github.com/andys-github/algo-practice/blob/sort/sort/insertion-sort.py) - &Omicron;(n) | &Omicron;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
-#### * [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py) - &Omicron;(n<sup>2</sup>)
-#### * [Merge Sort](https://github.com/andys-github/algo-practice/blob/main/sort/merge-sort.py) - &Omicron;(n log n)
-#### * [Quick Sort](https://github.com/andys-github/algo-practice/blob/main/sort/quick-sort.py) - &Omicron;(n log n) | &Omicron;(n log n) | &Omicron;(n<sup>2</sup>)
-#### * [Radix Sort](https://github.com/andys-github/algo-practice/blob/main/sort/radix-sort.py) - &Omicron;(nk)
+#### * [Bubble Sort](https://github.com/andys-github/algo-practice/blob/sort/sort/bubble-sort.py) - &Omega;(n) | &Theta;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
+#### * [Insertion Sort](https://github.com/andys-github/algo-practice/blob/sort/sort/insertion-sort.py) - &Omega;(n) | &Theta;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
+#### * [Selection Sort](https://github.com/andys-github/algo-practice/blob/main/sort/selection-sort.py) - &Omega;(n<sup>2</sup>) | &Theta;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
+#### * [Merge Sort](https://github.com/andys-github/algo-practice/blob/main/sort/merge-sort.py) - &Omega;(n log n) | &Theta;(n log n) | &Omicron;(n log n)
+#### * [Quick Sort](https://github.com/andys-github/algo-practice/blob/main/sort/quick-sort.py) - &Omega;(n log n) | &Theta;(n log n) | &Omicron;(n<sup>2</sup>)
+#### * [Radix Sort](https://github.com/andys-github/algo-practice/blob/main/sort/radix-sort.py) - &Omega;(nk) | &Theta;(nk) | &Omicron;(nk)
 
 
 ### Breadth-first Search (BFS)
