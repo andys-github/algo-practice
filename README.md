@@ -1,5 +1,8 @@
 # algo-practice
-Algorithm Practice in Python
+Data Structures and Algorithm in Python
+
+## Data Structures
+#### * [Arrays](https://github.com/andys-github/algo-practice/tree/main/arrays)
 
 ## [Sorting Algorithms](https://github.com/andys-github/algo-practice/tree/main/sort)
 #### * [Bubble Sort](https://github.com/andys-github/algo-practice/blob/sort/sort/bubble-sort.py) - &Omega;(n) | &Theta;(n<sup>2</sup>) | &Omicron;(n<sup>2</sup>)
