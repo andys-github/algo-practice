@@ -89,24 +89,34 @@ class SinglyLinkedList:
       currentNode = currentNode.next
       position += 1
 
+  def print_all(self):
+    currentNode = self.head
+    while currentNode is not None:
+      print(currentNode.data)
+      currentNode = currentNode.next
+
+
+
 
 # ------------------------------------------
-node1 = Node('John')
-node2 = Node('Kai')
-node3 = Node('Cortana')
+if __name__ == '__main__':
+  node1 = Node('John')
+  node2 = Node('Kai')
+  node3 = Node('Cortana')
 
-sll = SinglyLinkedList()
-sll.insert(node1)
-sll.insert(node2)
-sll.insert(node3)
+  sll = SinglyLinkedList()
+  sll.insert(node1)
+  sll.insert(node2)
+  sll.insert(node3)
 
-print(sll)
-print('Length:', len(sll))
+  print(sll)
+  print('Length:', len(sll))
 
-sll.deleteAt(1)
-print(sll)
-print('Length:', len(sll))
+  sll.deleteAt(1)
+  print(sll)
+  print('Length:', len(sll))
 
-sll.insertAt(node2, 1)
-print(sll)
-print('Length:', len(sll))
+  sll.insertAt(node2, 1)
+  print(sll)
+  print('Length:', len(sll))
+
