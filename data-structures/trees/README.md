@@ -28,9 +28,8 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 **Tree Traversal**
 - Pre-order: **root** --> left sub-tree --> right sub-tree
 - Post-order: left subtree --> right sub-tree --> **root**
-  - Starting with leaf nodes, and progressing upwards to the root
 - In-order: left sub-tree --> **root** --> right sub-tree
-  - Results in a sorted order
+  - **This results in a sorted order**
 
 #### Big-O Complexities of BST
 <table>
