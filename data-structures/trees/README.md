@@ -6,19 +6,20 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 
 - Height of a tree is the number of edges on 
 
-# Binary Search Trees
+## Binary Search Trees
 
 - Every node in the tree can have at most 2 children (left and right)
 - Left child is smaller than parent
 - Right child is greater than parent
 - We can excess **root node** exclusively, and other nodes can be accessed via root node
 
-**Complete Binary Tree** - When all the left and right children of the BST is filled
+**Complete Binary Tree**
+- A BST where all the left and right children of the BST is filled
 - Height of complete BST is: h = &Omicron;(log N), N = number of nodes at height 'h'
   - If the tree is not balanced, h = &Omicron;(log N) does not hold
 - Minimum item in a BST is the leftmost item, and the maximum item is at the rightmost.
 
-**Deleting a node in BST:
+**Deleting a node in BST**
 - Deleting a node with one child - just change the parent-child relation with the updated values
 - Deleteing a node with two children (e.g, root)
   - Replace it with **successor** node (The smallest node on the right of the node)
@@ -63,4 +64,6 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
   </tbody>
 </table>
 
-> Cons: BST can become imbalanced, which is when we would need balanced trees like AVL, Red-black trees, etc
+<br />
+
+> **Cons:** BST can become imbalanced, which is when we would need balanced trees like AVL, Red-black trees, etc
