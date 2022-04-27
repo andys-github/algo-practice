@@ -62,3 +62,5 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
     </tr>
   </tbody>
 </table>
+
+> Cons: BST can become imbalanced, which is when we would need balanced trees like AVL, Red-black trees, etc
