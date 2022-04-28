@@ -84,6 +84,21 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 > This difference (h<sub>left</sub> - h<sub>right</sub>) in heights is called as **balance factor**
 >
 > If the balance factor is positive, then it is a left-heavy case, otherwise right-heavy case
+>
+> In left-heavy situation (positive balance factor), we do a **right rotation** to balance the tree
+>
+> And in right-heavy situation, we do a **left rotation**
+>
+
+```
+
+     D                                    C
+    / \      Right Rotation ---->        / \
+   C   E                                A   D
+  / \        <---- Left Rotation           / \
+ A   B                                    B   E
+
+```
 
 #### Big-O Complexities of AVL
 <table>
