@@ -75,11 +75,46 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 - AVL trees are faster than Red-Black tree because they are more rigidly balanced and hence need more work	
 - Windows OS heavily relies on AVL, whereas Linux leans on Red-Black
 - AVL trees are exactly same as BST except that we track height (h) of each nodes in the tree:
-> all subtree height parameters can not exceed by 1 (otherwise the tree is considered imbalanced)
 
-> | h<sub>left</sub> - h<sub>right</sub> | <= 1
 
+> All subtree height parameters can not exceed by 1 (otherwise the tree is considered imbalanced)
+>
+> Thus for a balanced tree, **| h<sub>left</sub> - h<sub>right</sub> | <= 1**
+>
 > This difference (h<sub>left</sub> - h<sub>right</sub>) in heights is called as **balance factor**
-
+>
 > If the balance factor is positive, then it is a left-heavy case, otherwise right-heavy case
 
+#### Big-O Complexities of AVL
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Case</th>
+      <th colspan="3">Time Complexity</th>
+      <th rowspan="2">Space Complexity</th>
+    </tr>
+    <tr>
+      <th>Insertion</th>
+      <th>Deletion</th>
+      <th>Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Average Case</td>
+      <td>&Omicron;(log N)</td>
+      <td>&Omicron;(log N)</td>
+      <td>&Omicron;(log N)</td>
+      <td>&Omicron;(N)</td>
+    </tr>
+    <tr>
+      <td>Worst Case</td>
+      <td>&Omicron;(N)</td>
+      <td>&Omicron;(log N)</td>
+      <td>&Omicron;(log N)</td>
+      <td>&Omicron;(log N)</td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
