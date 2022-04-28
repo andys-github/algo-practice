@@ -123,11 +123,11 @@ if __name__ == '__main__':
     node = Node(d)
     bst.insert(node)
 
-  #        12
-  #
-  #    4        15
-  #
-  #  2    7   13   26
+  #       12
+  #      /  \
+  #     4    15
+  #    / \   / \
+  #   2   7 13  26
 
   print('In-order Traversal')
   bst.traverse()
