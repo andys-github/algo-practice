@@ -76,7 +76,10 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 - Windows OS heavily relies on AVL, whereas Linux leans on Red-Black
 - AVL trees are exactly same as BST except that we track height (h) of each nodes in the tree:
 > all subtree height parameters can not exceed by 1 (otherwise the tree is considered imbalanced)
+
 > | h<sub>left</sub> - h<sub>right</sub> | <= 1
+
 > This difference (h<sub>left</sub> - h<sub>right</sub>) in heights is called as **balance factor**
+
 > If the balance factor is positive, then it is a left-heavy case, otherwise right-heavy case
 
