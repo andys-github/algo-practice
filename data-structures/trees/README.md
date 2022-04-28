@@ -92,13 +92,17 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 
 ```
 
-     D                                    C
+     D                                    B
     / \      Right Rotation ---->        / \
-   C   E                                A   D
+   B   E                                A   D
   / \        <---- Left Rotation           / \
- A   B                                    B   E
+ A   C                                    C   E
 
 ```
+
+> The time complexity of rotation is quite fast - O(1) - because we have to update the references of Root node
+>
+> The **in-order traversal** remains same before and after the rotation: A --- B --- C --- D --- E
 
 #### Big-O Complexities of AVL
 <table>
