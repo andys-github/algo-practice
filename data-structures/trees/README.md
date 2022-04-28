@@ -66,3 +66,16 @@ Equivalantly, a tree is a connected, acyclic and undirected graph.
 <br />
 
 > **Cons:** BST can become imbalanced, which is when we would need balanced trees like AVL, Red-black trees, etc
+
+## AVL Trees
+- named after Adelson - Velsky - Landis
+- This data structure has a guaranteed O(log N) running time complexity
+- The running time of BST depends on the height (h) of the tree
+- In AVL trees, the heights of two sub-trees of any node can differ by at most one
+- AVL trees are faster than Red-Black tree because they are more rigidly balanced and hence need more work	
+- Windows OS heavily relies on AVL, whereas Linux leans on Red-Black
+- AVL trees are exactly same as BST except that we track height (h) of each nodes in the tree:
+> all subtree height parameters can not exceed by 1 (otherwise the tree is considered imbalanced)
+> | h<sub>left</sub> - h<sub>right</sub> | <= 1
+
+
