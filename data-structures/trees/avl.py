@@ -16,7 +16,7 @@ class AvlTree:
       currentNode = self.root
 
       while currentNode:
-        currentNode.height = self.calc_height(currentNode)
+        currentNode.height = max(self.calc_height(currentNode.left), self.calc_height(currentNode.right)) + 1
         if data < currentNode.data:
           if currentNode.left:
             currentNode = currentNode.left
@@ -25,7 +25,6 @@ class AvlTree:
             break
         else:
           if currentNode.right:
-            currentNode.height += 1
             currentNode = currentNode.right
           else:
             currentNode.right = Node(data, currentNode)
@@ -33,19 +32,87 @@ class AvlTree:
     else:
       self.root = Node(data)
 
-  def remove(self):
+    self.handle_violation(self.root)
+
+  def remove(self, data, node):
+    if data < node.data:
+      self.remove(data, node.left)
+    elif data > node.dat:
+      self.remove(data, node.right)
+    else:
+      # Case 1: Node is leaf
+      # Case 2: Node has one child
+      # Case 3: Node has two children
+      parent = node.parent
+      if node.left is None:
+        if node.right is None: # Case 1
+          if parent is not None:
+            if parent.left == node: # 'node' is left leaf
+              parent.left = None
+            if parent.right == node: # 'node' is right leaf
+              parent.right = None
+          else: # 'node' is root
+            self.root = None
+        else: # Case 2 ('node' has a right child)
+          child = node.right
+          if parent is not None:
+            if parent.left == node: # 'node' is left child
+              parent.left = child
+              child.parent = parent
+            if parent.right == node: # 'node' is right child
+              parent.right = child
+              child.parent = parent
+          else: # 'node' is root
+            self.root = child
+        del node
+        # after every insertion/deletion, check for any AVL violation
+        self.handle_violation(self.root)
+      else:
+        if node.right is None: # Case 2 ('node' has a left child)
+          child = node.left
+          if parent is not None:
+            if parent.left == node: # 'node' is left child
+              parent.left = child
+              child.parent = parent
+            if parent.right == node: # 'node' is right child
+              parent.right = child
+              child.parent = parent
+          else: # 'node' is root
+            self.root = child
+          del node
+          # after every insertion/deletion, check for any AVL violation
+          self.handle_violation(self.root)
+        else: # Case 3
+          predecessor = self.get_predecessor(node.left)
+          temp = predecessor.data
+          predecessor.data = node.data
+          node.data = temp
+          self.remove(data, predecessor)
 
 
-  def get_height(self, node):
+
+
+  def handle_violation(self, node):
+    pass
+
+  def get_predecessor(self, node):
+    if node.right:
+      return self.getpredecessor(node.right)
+
+    return node
+
+
+  def calc_height(self, node):
     if not node:
       return -1
     else:
       return node.height
 
-  def calc_height(self, node):
-    height = max(self.get_height(node.left), self.get_height(node.right)) + 1
-    print(f'Node {node.data} has a height of {height}')
-    return height
+  def calc_balance_factor(self, node):
+    if node is not None:
+       return 0
+
+    return self.calc_height(node.left) - self.calc_height(node.right)
 
   def print_in_order(self, node):
     if node.left:
@@ -81,4 +148,5 @@ tree_data = [12, 4, 15, 1, 6, 13, 19]
 for d in tree_data:
   avl.insert(d)
 
-# avl.print_tree()
+print('In-order Traversal:')
+avl.print_tree()

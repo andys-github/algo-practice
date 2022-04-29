@@ -2,7 +2,12 @@
 Data Structures and Algorithm in Python
 
 ## Data Structures
-#### * [Arrays](https://github.com/andys-github/algo-practice/tree/main/arrays)
+#### [Arrays](https://github.com/andys-github/algo-practice/tree/main/arrays)
+#### Linked List
+#### Queue
+#### Stack
+#### Tree
+#### Graph
 
 <br />
 
