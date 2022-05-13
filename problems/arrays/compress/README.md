@@ -1,4 +1,6 @@
-Write a function, compress, that takes in a string as an argument. 
+# compress
+
+Write a function, compress, that takes in a string as an argument.
 The function should return a compressed version of the string where consecutive occurrences of the same characters are compressed into the number of occurrences followed by the character.
 Single character occurrences should not be changed.
 
@@ -10,17 +12,27 @@ Single character occurrences should not be changed.
 
 You can assume that the input only contains alphabetic characters.
 
-
+test_00:
+```py
 compress('ccaaatsss') # -> '2c3at3s'
+```
 
+test_01:
+```py
 compress('ssssbbz') # -> '4s2bz'
+```
 
+test_02:
+```py
 compress('ppoppppp') # -> '2po5p'
+```
 
+test_03:
+```py
 compress('nnneeeeeeeeeeeezz') # -> '3n12e2z'
+```
 
+test_04:
+```py
 compress('yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'); # -> '127y'
-
-
-
-
+```
