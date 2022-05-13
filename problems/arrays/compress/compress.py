@@ -1,3 +1,7 @@
+# n: length of string s
+# time: O(n)
+# space: O(n)
+
 def compress(s):
   s += '!'
   result = []
