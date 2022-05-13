@@ -1,3 +1,8 @@
+# n: lenght of input array
+# time: O(n)
+# space: O(1)
+
+
 def max_value(nums):
   max_num = float('-inf') # nums[0]
 

@@ -1,3 +1,8 @@
+# n: number of groups
+# m: max num found in any group
+# time: O(n * m)
+# space: O(n * m)
+
 def uncompress(s):
   result_array = []
   i = 0

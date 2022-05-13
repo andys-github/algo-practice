@@ -1,3 +1,7 @@
+# n: input integer
+# time: O(sqrt(n))
+# space: O(1)
+
 from math import sqrt, floor
 
 def is_prime(n):
