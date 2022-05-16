@@ -16,11 +16,10 @@ def _quickest_concat(s, words, memo):
 
   min_count = float('inf')
   for word in words:
-    count = float('inf')
     if s.startswith(word):
       suffix = s[len(word):]
       count = 1 + _quickest_concat(suffix, words, memo)
-    min_count = min(min_count, count)
+      min_count = min(min_count, count)
 
   memo[s] = min_count
   return memo[s]
